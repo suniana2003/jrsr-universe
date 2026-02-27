@@ -1,0 +1,95 @@
+.night-page {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
+  background-size: 400% 400%;
+  animation: nightFlow 20s ease infinite;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes nightFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* HERO */
+.night-hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Moon */
+.moon {
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, #f1faee, #a8dadc);
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255,255,255,0.4);
+  position: absolute;
+  top: 15%;
+  animation: moonGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes moonGlow {
+  from { box-shadow: 0 0 30px rgba(255,255,255,0.3); }
+  to { box-shadow: 0 0 70px rgba(255,255,255,0.7); }
+}
+
+.night-title {
+  margin-top: 200px;
+  font-size: 2.5rem;
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MESSAGE */
+.night-message,
+.night-final {
+  padding: 80px 25px;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: auto;
+  animation: slowFade 3s ease forwards;
+}
+
+@keyframes slowFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Twinkling stars */
+.night-particle {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: twinkle 4s ease-in-out forwards;
+  pointer-events: none;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.5); }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .night-title { font-size: 2rem; }
+  .night-message { font-size: 1rem; }
+}

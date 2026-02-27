@@ -1,0 +1,125 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Animated gradient background */
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #f8f9ff, #fce3ec, #e0f7fa, #fff3e0);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease infinite;
+  position: relative;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glass portal card */
+.home-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(18px);
+  padding: 60px 40px;
+  border-radius: 28px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 420px;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Title glow */
+.home-title {
+  font-size: 2.3rem;
+  margin-bottom: 12px;
+  color: #333;
+  animation: glow 3s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px rgba(255, 200, 150, 0.4); }
+  to { text-shadow: 0 0 25px rgba(255, 150, 200, 0.6); }
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Theme preview colors */
+.morning {
+  background: linear-gradient(135deg, #ffd166, #ff9f1c);
+}
+
+.stress {
+  background: linear-gradient(135deg, #a8dadc, #457b9d);
+  color: white;
+}
+
+.night {
+  background: linear-gradient(135deg, #b8bedd, #5e548e);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* Floating particles */
+.home-particle {
+  position: fixed;
+  bottom: -10px;
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, #fff, #ffd6a5);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatUp linear forwards;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .home-card {
+    padding: 40px 25px;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+}
