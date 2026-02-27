@@ -61,20 +61,20 @@ export default function StressRelief() {
           <br />
           Nothing else matters right now.
           <br /><br />
-          Just your breath.
+          Just your breath -
           Just this second.
-        </p>
-      </section>
-
-      <section className="stress-final">
-        <p>
+          <br /><br />
           Whenever it feels heavy…
           <br />
           Come back here.
           <br /><br />
-          And maybe…
+          Remember...
           <br />
-          Give me 10 calm minutes too. 💛
+          I am always there fo you!
+          <br />
+          My Love - My Everything
+          <br />
+          I Love You!
         </p>
       </section>
 

@@ -26,7 +26,7 @@ export default function Home() {
     <div className="home-container">
 
       <div className="home-card">
-        <h1 className="home-title">Little Universe</h1>
+        <h1 className="home-title">Our Universe</h1>
         <p className="home-subtitle">
           Every mood has a place here.
         </p>

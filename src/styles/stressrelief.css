@@ -52,11 +52,12 @@
 }
 
 /* MESSAGE */
-.stress-message,
-.stress-final {
+.stress-message{
   padding: 80px 25px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-style: italic;
+  color:aliceblue;
   line-height: 1.8;
   max-width: 600px;
   margin: auto;

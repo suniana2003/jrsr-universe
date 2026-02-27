@@ -40,9 +40,10 @@ body {
 
 /* Title glow */
 .home-title {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
+  font-style: oblique;
   margin-bottom: 12px;
-  color: #333;
+  color:coral;
   animation: glow 3s infinite alternate;
 }
 
@@ -52,8 +53,9 @@ body {
 }
 
 .home-subtitle {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: blue;
   margin-bottom: 40px;
 }
 
@@ -76,16 +78,19 @@ body {
 /* Theme preview colors */
 .morning {
   background: linear-gradient(135deg, #ffd166, #ff9f1c);
+  font-style: italic;
 }
 
 .stress {
   background: linear-gradient(135deg, #a8dadc, #457b9d);
   color: white;
+  font-style: italic;
 }
 
 .night {
   background: linear-gradient(135deg, #b8bedd, #5e548e);
   color: white;
+  font-style: italic;
 }
 
 .btn:hover {

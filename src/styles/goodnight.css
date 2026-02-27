@@ -45,6 +45,7 @@
 .night-title {
   margin-top: 200px;
   font-size: 2.5rem;
+  font-style: oblique;
   animation: fadeIn 3s ease forwards;
 }
 
@@ -53,12 +54,19 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+.night-title2 {
+  margin-top: 50px;
+  font-size: 2rem;
+  font-style: oblique;
+  animation: fadeIn 3s ease forwards;
+}
+
 /* MESSAGE */
-.night-message,
-.night-final {
+.night-message{
   padding: 80px 25px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  font-style: italic;
   line-height: 1.8;
   max-width: 600px;
   margin: auto;

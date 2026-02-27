@@ -35,6 +35,8 @@ export default function GoodNight() {
       <section className="night-hero">
         <div className="moon"></div>
         <h1 className="night-title">Good Night 🌙</h1>
+        <br />
+        <h2 className="night-title2"> My dear Love ❤️</h2>
       </section>
 
       {/* MESSAGE */}
@@ -48,18 +50,14 @@ export default function GoodNight() {
           <br /><br />
           You did your best.
           And that is enough.
-        </p>
-      </section>
-
-      <section className="night-final">
-        <p>
+          <br /><br />
           Sleep peacefully.
           <br />
           I’m quietly rooting for you.
           <br /><br />
           And maybe…
           <br />
-          Dream of me a little. 💛
+          Dream of me darling. 💛
         </p>
       </section>
 
