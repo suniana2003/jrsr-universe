@@ -14,6 +14,17 @@
   100% { background-position: 0% 50%; }
 }
 
+.stress-top-name {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 1.8rem;
+  font-style: oblique;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #e0f7fa;
+  font-weight: 500;
+}
+
 /* HERO */
 .stress-hero {
   height: 100vh;
@@ -42,6 +53,7 @@
 
 .breathing-text {
   font-size: 2rem;
+  font-style: italic;
   z-index: 1;
   animation: fadeText 2s ease;
 }
@@ -53,7 +65,7 @@
 
 /* MESSAGE */
 .stress-message{
-  padding: 80px 25px;
+  padding: 20px 25px;
   text-align: center;
   font-size: 1.5rem;
   font-style: italic;

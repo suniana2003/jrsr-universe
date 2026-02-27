@@ -57,7 +57,7 @@ export default function GoodNight() {
           <br /><br />
           And maybe…
           <br />
-          Dream of me darling. 💛
+          Dream of me. 💛
         </p>
       </section>
 

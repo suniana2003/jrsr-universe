@@ -45,6 +45,9 @@ export default function StressRelief() {
       <audio ref={audioRef} loop>
         <source src="/calm.mp3" type="audio/mpeg" />
       </audio>
+      
+      {/* NAME AT TOP */}
+      <h2 className="stress-top-name"> Hey My Love 😘 </h2>
 
       {/* HERO */}
       <section className="stress-hero">
